@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Бронирование</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+               <div class="footer_information">
+                   <div class="logo">
+                       <img src="../img/Логотип.png" alt="logo">
+                   </div>
+                       <a href="../index.html#stocks" class="sslca">Акции</a>
+                       <a href="../index.html#search" class="sslca">Поиск</a>
+                       <a href="../index.html#podpiska" class="sslca">Управление бронированием</a>
+                </div>
+              </div>
+           </header>
+           <section id="oform">
+               <div class="container">
+                   <form id="oformlenie">
+                   <fieldset class="blocks_information">
+                       <legend>Основные данные</legend>
+                        <div class="block_info">
+                            <h2>Регион</h2>
+                            <input id="Region" value="Абхазия" readonly>
+                        </div>
+                        <div class="block_info">
+                            <h2>Название маршрута</h2>
+                            <input id="Name_Region" value="Термальные источники Абхазии" readonly>
+                        </div>
+                        <div class="block_info">
+                            <h2>Количество выбранных зон</h2>
+                            <input id="Kol_zon" value="9" readonly>
+                        </div>
+                        <div class="block_info">
+                            <h2>Предварительная дата похода</h2>
+                            <input id="Dats" value="С 23.04 По 05.05" readonly>
+                        </div>
+                        <div class="block_info">
+                            <h2>Количество человек</h2>
+                            <input id="Kol_chel" value="3" readonly>
+                        </div>
+                        <div class="block_info">
+                            <h2>Стоимость</h2>
+                            <input id="Cost" value="1520 р." readonly>
+                        </div>
+                   </fieldset>
+                   </form>
+                   <h2>Дополнительные услуги</h2>
+                   <div class="dop_uslugs">
+                       <div class="box_usluga">
+                            <img src="../img/usluga/prov.jpg" alt="additional_service">
+                            <h3>Услуга проводника</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Nunc cursus elit eget lacus convallis, in vehicula mauris iaculis. 
+                                Suspendisse vulputate maximus tempor.</p>
+                                <div class="btn">
+                            <button class="button_2" onclick="Myfn(0)">Выбрать</button>
+                            </div>
+                       </div>
+                       <div class="box_usluga">
+                            <img src="../img/usluga/oboryd.jpg" alt="additional_service">
+                            <h3>Услуга аренды туристического оборудования</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Nunc cursus elit eget lacus convallis, in vehicula mauris iaculis. 
+                                Suspendisse vulputate maximus tempor.</p>
+                                <div class="btn">
+                            <button class="button_2" onclick="Myfn(1)">Выбрать</button>
+                        </div>
+                        </div>
+                        <div class="box_usluga">
+                            <img src="../img/usluga/foto.jpg" alt="additional_service">
+                            <h3>Услуги фотографа/видео оператора </h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Nunc cursus elit eget lacus convallis, in vehicula mauris iaculis. 
+                                Suspendisse vulputate maximus tempor.</p>
+                                <div class="btn">
+                            <button class="button_2" onclick="Myfn(2)">Выбрать</button>
+                        </div>
+                       </div>
+                       <div class="box_usluga">
+                            <img src="../img/usluga/strah.jpg" alt="additional_service">
+                            <h3>Страхование от несчастных случаев</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Nunc cursus elit eget lacus convallis, in vehicula mauris iaculis. 
+                                Suspendisse vulputate maximus tempor.</p>
+                                <div class="btn">
+                            <button class="button_2" onclick="Myfn(3)">Выбрать</button>
+                        </div>
+                        </div>
+                   </div>
+                   <form id="oform_2">
+                   <fieldset>
+                       <legend>Итог</legend>
+                        <div class="block_info">
+                            <h2>Комментарий</h2>
+                            <textarea></textarea>
+                        </div>
+                        <div class="block_info">
+                            <h2>Введите e-mail</h2>
+                            <input type="email">
+                        </div>
+                        <div class="block_info">
+                            <h2>Итоговая стоимость</h2>
+                            <input id="Cost_itog" value="1520" readonly>
+                        </div>
+                        <div class="btn">
+                        <button>Оформить бронирование</button>
+                        </div>
+                    </fieldset>
+                    </form>
+               </div>
+           </section>
+           <footer>
+            <div class="container">
+                <div class="footer_block">
+                    <ul>
+                        <li><a href="../index.html#stocks" class="sslca">Акции</a></li>
+                        <li><a href="../index.html#search" class="sslca">Поиск</a></li>
+                        <li><a href="../index.html#podpiska" class="sslca">Управление бронированием</a></li>
+                    </ul>
+                    <ul>
+                        <li class="socisl" ><h3>Мы в соц.сетях</h3></li>
+                        <li class="socisl"><a href="#"><img src="../img/social_icons/vk.png" alt="vk"></a><a href="#"><img src="../img/social_icons/instagram.png" alt="intsagram"></a></li>
+                    </ul>
+                    <ul>
+                        <li><h3>Наш телефон</h3></li>
+                        <li><a href="tel:88005553310" class="sslca">8 (800)555-33-10</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script src="../js/article_2.js"></script>
+    </body>
+</html>

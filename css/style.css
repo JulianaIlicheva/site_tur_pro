@@ -1,0 +1,788 @@
+body{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.container{
+    max-width: 1738px;
+    text-align: center;
+    align-items: center;
+}
+header{
+    max-width: 2000px;
+    margin: 0;
+    padding: 0;
+    border-radius: 15px;
+    background-color: rgba(222, 184, 135, 0.7);
+}
+header .footer_information{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+header .footer_information a{
+    text-decoration: none;
+    color:black;
+    font-size: 30px;
+}
+header .logo img{
+    margin:5px;
+    width: 80%;
+    height: auto;
+}
+/*Отступы*/
+section, form{
+    margin-top:210px;
+}
+section#infografika .infografika_img{
+    height: auto;
+}
+section#infografika .infografika_img img{
+    height:80%;
+    width: 100%;
+}
+form{
+    display:block;
+    justify-content: center;
+    Border: 1px grey solid;
+    border-radius:25px;
+    width:60%;
+    margin:0 auto 0 auto;
+}
+section#about_us .box_us{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+}
+
+
+section#about_us .box_us .text_us h2{
+    font-size: 28px;
+}
+section#about_us .box_us .text_us p{
+    font-size: 25px;
+}
+
+section#about_us .box_us .text_us{
+    width: 400px;
+    height: auto;
+}
+section#about_us .box_us .text_us img{
+   width: 50%;
+   height: auto;
+}
+section#about_us .box_us .text_us{
+    margin:15px;
+    border-radius: 25px;
+    border: 1px solid rgba(0,0,0,0.5);
+    padding:15px;
+}
+section#about_us{
+    margin-bottom: 200px;
+}
+.type_radio{
+	display: inline-block;
+	margin-right: 10px;
+    
+}
+.type_radio input[type='radio']{
+	display: none;
+}
+.type_radio label {
+	display: inline-block;
+	cursor: pointer;
+	padding: 0px 15px;
+	line-height: 34px;
+	border-radius: 6px;
+	user-select: none;
+    box-shadow:0 0 10px rgba(0,0,0,0.5);
+    font-size: 28px;
+    margin-top: 15px;
+}
+/* Checked */
+.type_radio input[type='radio']:checked + label{
+	background: #ffe0a6;
+    box-shadow:none;
+}
+.form_search h2{
+    margin-bottom:0;
+    font-size:30px;
+}
+/* Hover */
+.type_radio label:hover{
+	background-color: #ffe0a6;
+    opacity:.7;
+    cursor: pointer;
+}
+.form_search input[type='date']:hover{
+    cursor: pointer;
+}
+.form_search input[type='date']{
+	border: 1px solid black;
+    border-radius: 10px;
+    background-color: aliceblue;
+    height: 35px;
+    margin-top:15px;
+    font-size:25px;
+}
+.number {
+	display: inline-block;
+	position: relative;
+	width: 100px;
+    margin-top: 15px;
+}
+.number input[type='number']{
+	display: block;
+	height: 32px;
+	line-height: 32px;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-align: center;
+    font-size:25px;
+}
+.number input[type='number']::-webkit-outer-spin-button,
+.number input[type='number']::-webkit-inner-spin-button {
+	display: none;
+}
+.number-minus{
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	bottom: 1px;
+	width: 20px;
+	padding: 0;
+	display: block;
+	text-align: center;
+	border: none;
+	border-right: 1px solid #ddd;
+	font-size: 25px;
+	font-weight: 600;
+}
+.number-plus{
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	bottom: 1px;
+	width: 20px;
+	padding: 0;
+	display: block;
+	text-align: center;
+	border: none;
+	border-left: 1px solid #ddd;
+	font-size: 25px;
+	font-weight: 600;
+   
+}
+button[class='number-minus']:hover{
+    cursor: pointer;
+    background-color: black;
+    color:white;
+}
+button[class='number-plus']:hover{
+    cursor: pointer;
+    background-color: black;
+    color:white;
+}
+.type_level{
+	display: inline-block;
+	margin-right: 10px;
+    margin-top: 15px;
+    
+}
+.type_level input[type='radio']{
+	display: none;
+}
+.type_level label{
+    display: inline-block;
+	cursor: pointer;
+	padding: 0px 15px;
+	line-height: 34px;
+	border-radius: 6px;
+	user-select: none;
+    border:1px white solid;
+    font-size: 25px;
+}
+.type_level .color_1{
+    background-color: #8FDEFA;
+}
+.type_level .color_2{
+    background-color: #87F093;
+}
+.type_level .color_3{
+    background-color: #EEEE89;
+}
+.type_level .color_4{
+    background-color: #FFC674;
+}
+.type_level .color_5{
+    background-color: #FF937C;
+}
+.type_level label:hover{
+	background-color: #ffe0a6;
+    opacity:.7;
+    cursor: pointer;
+}
+.type_level input[type='radio']:checked + label{
+    background-color: white;
+    border: 1px solid black;
+}
+.btn button {
+    background-color: white;
+    border: 1px black solid;
+    height: 30px;
+    padding:0 10px 0 10px;
+    margin-top:30px;
+    margin-bottom: 30px;
+    font-size:25px;
+}
+.btn button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+form:hover{
+    box-shadow:5px 5px 10px rgba(0,0,0,0.5);
+}
+section#devis .block_devis{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  
+}
+section#devis .block_devis .info_devic{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: 1px solid rgba(0,0,0,0.5);
+    margin: 10px;
+    border-radius: 20px;
+    
+}
+section#devis .block_devis .info_devic h3{
+    font-size: 28px;
+    background-color: lemonchiffon;
+}
+section#devis .block_devis .info_devic p{
+    font-size: 25px;
+}
+section#infografika{
+    margin-bottom: 150px;
+    margin-top: 100px;
+}
+section#infografika .infografika_img img{
+    width:80%;
+    height: auto;
+}
+section#stocks{
+    text-align: center;
+}
+section#stocks .card_information{
+    background-color: white;
+    display: block;
+    justify-content: center;
+}
+section#stocks .card_information h3{
+    font-size: 33px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+section#stocks .card_information p{
+    font-size: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+section#stocks .card_information img{
+    margin: 0 auto;
+    height: auto;
+    width: 80%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top:20px;
+}
+section#stocks .card_information button{
+    font-size: 25px;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    padding:20px;
+    margin-top:20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+section#stocks .card_information button:hover{
+    background-color: white;
+    color: black;
+}
+section#stocks #slider { /*положение слайдера*/
+    position: relative;
+	text-align: center;
+    top: 10px;
+    background-color: white;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    border:1px solid grey;
+}
+section#stocks #slider{ /*центровка слайдера*/
+	margin: 0 auto;
+}
+section#stocks #slides article{ /*все изображения справа друг от доруга*/
+	width: 20%;
+	float: left;
+}
+section#stocks #slides .image{ /*устанавливает общий размер блока с изображениями*/
+	width: 500%;
+	line-height: 0;
+    background-color: white;
+}
+section#stocks #overflow{ /*сркывает все, что находится за пределами этого блока*/
+	width: 100%;
+	overflow: hidden;
+}
+section#stocks #desktop:checked ~ #slider{ /*размер всего слайдера*/
+	max-width: 700px; /*максимальнная длинна*/
+}
+/*настройка переключения и положения для левой стрелки*/
+/*если свич1-4 активны, то идет обращение к лейблу из блока с id контролс*/
+section#stocks #switch1:checked ~ #controls label:nth-child(4), 
+section#stocks #switch2:checked ~ #controls label:nth-child(1),
+section#stocks #switch3:checked ~ #controls label:nth-child(2),
+section#stocks #switch4:checked ~ #controls label:nth-child(3){
+	background: url('../img/slider/right.png') no-repeat; /*заливка фона картинкой без повторений*/
+	float:left;
+	margin: auto 0 auto -100px; /*сдвиг влево*/
+	display: block;
+	height: 68px;
+	width: 68px;
+}
+/*настройка переключения и положения для правой стрелки*/
+section#stocks #switch1:checked ~ #controls label:nth-child(2), 
+section#stocks #switch2:checked ~ #controls label:nth-child(3),
+section#stocks #switch3:checked ~ #controls label:nth-child(4),
+section#stocks #switch4:checked ~ #controls label:nth-child(1){
+	background: url('../img/slider/left.png') no-repeat; /*заливка фона картинкой без повторений*/
+	float: right;
+	margin: auto -100px auto 0; /*сдвиг вправо*/
+	display: block;
+	height: 68px;
+	width: 68px;
+}
+section#stocks label, a{ /*при наведении на стрелки или переключатели - курсор изменится*/
+	cursor: pointer;
+}
+section#stocks .all input{ /*скрывает стандартные инпуты (чекбоксы) на странице*/
+	display: none;
+}
+/*позиция изображения при активации переключателя*/
+section#stocks #switch1:checked ~ #slides .image{
+	margin-left: 0;
+}
+section#stocks #switch2:checked ~ #slides .image{
+	margin-left: -100%;
+}
+section#stocks #switch3:checked ~ #slides .image{
+	margin-left: -200%;
+}
+section#stocks #switch4:checked ~ #slides .image{
+	margin-left: -300%;
+}
+section#stocks #switch5:checked ~ #slides .image{
+	margin-left: -400%;
+}
+section#stocks .text{
+    display:none;
+}
+section#stocks #switch1:checked ~ #slides div#first{
+    display:inline-block;
+}
+section#stocks #switch2:checked ~ #slides div#two{
+    display:inline-block;
+}
+section#stocks #switch3:checked ~ #slides div#three{
+    display:inline-block;
+}
+section#stocks #switch4:checked ~ #slides div#four{
+    display:inline-block;
+}
+section#stocks #controls{ /*положение блока всех управляющих элементов*/
+	margin: -25% 0 0 0;
+	width: 100%;
+	height: 50px;
+}
+section#stocks #active label{ /*стиль отдельного переключателя*/
+	border-radius: 10px; /*скругление углов*/
+	display: inline-block; /*расположение в строку*/
+	width: 15px;
+	height: 15px;
+	background: black;
+}
+section#stocks #active{ /*расположение блока с переключателями*/
+	margin: 23% 0 0;
+	text-align: center;
+}
+/*цвет активного лейбла при активации чекбокса*/
+section#stocks #switch1:checked ~ #active label:nth-child(1),
+section#stocks #switch2:checked ~ #active label:nth-child(2),
+section#stocks #switch3:checked ~ #active label:nth-child(3),
+section#stocks #switch4:checked ~ #active label:nth-child(4){
+	background: white;
+	border:2px solid black;
+}
+section#stocks #slides .image{ /*анимация пролистывания изображений*/
+	transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+section#stocks #controls label:hover{ /*прозрачность стрелок при наведении*/
+	opacity: 0.6;
+}
+section#stocks #controls label{ /*прозрачность стрелок при отводе курсора*/
+	transition: opacity 0.2s ease-out;
+}
+section#stocks .block{
+    background-color: #537872;
+    padding-top:100px;
+    padding-bottom:100px;
+    font-size: 30px;
+    align-items: center;
+}
+form#podpiska{
+    display: block;
+    justify-content: center;
+    margin-top:210px;
+    margin-bottom: 210px;
+}
+form#podpiska h2{
+    font-size: 30px;
+}
+form#podpiska input{
+    font-size: 25px;
+    margin: 10px;
+    background-color: #EFFFED;
+}
+footer .footer_block{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(222, 184, 135, 0.7);
+    border-radius: 15px;
+}
+footer .footer_block ul{
+    list-style-type: none;
+    padding:0;
+}
+footer .footer_block ul .socisl{
+    width: 300px;
+}
+footer .footer_block ul li a, footer .footer_block ul li h3{
+    text-decoration: none;
+    margin: 0;
+    margin-top: 10px;
+    color:black;
+    font-size: 28px;
+}
+a[class="sslca"]:hover{
+    cursor: pointer;
+    color: #9e4446;
+}
+footer .footer_block ul li a img{
+    width: 10%;
+    height: auto;
+}
+/*Страница 2*/
+section#routs input[type='checkbox'] {
+    display: none;
+}
+section#routs .filters label {
+    border-radius: 25px;
+    border: 1px solid black;
+    background-color: #E8E6DA;
+    padding:0 10px 0 10px;
+    font-size: 28px;
+    margin-top:15px;
+}
+
+section#routs  .filters{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+section#routs  .filters h2{
+    font-size:30px;
+    margin:0;
+    margin-top: 15px;
+}
+section#routs .filters label:hover{
+    background-color: black;
+    color: white;
+}
+section#routs .filters .box_filters{
+    display:flex;
+    justify-content:space-between;
+    margin-right: 40px;
+    margin-left: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+section#routs .filters .filter{
+    text-align: center;
+    align-items: center;
+}
+section#routs .posts{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+section#routs .posts article{
+    display: block;
+    justify-content: center;
+    width: 450px;
+    height: auto;
+    background-color: #FCFAF9;
+    margin-top: 30px;
+    margin-right:30px;
+    border-radius: 20px;
+}
+section#routs .posts article:hover{
+    box-shadow:5px 5px 10px rgba(0,0,0,0.5);
+}
+section#routs .posts article:hover button[class='variety_zons']{
+    opacity: 1;
+}
+section#routs .posts article:hover button[class='variet']{
+    background-color: black;
+    color: white;
+}
+
+section#routs .posts article img{
+    width: 80%;
+    height: auto;
+    margin-top:20px;
+}
+section#routs li{
+    list-style: none;
+}
+section#routs .posts article h2{
+    font-size: 28px;
+}
+section#routs .posts article h3{
+    font-size: 25px;
+}
+section#routs .posts article p{
+    font-size:25px;
+}
+section#routs .posts article ol li p{
+    text-decoration: none;
+    color: black;
+    background-color: blanchedalmond;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 0 10px 0 10px;
+    font-size: 22px;
+}
+section#routs .posts article .post-categories{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+    flex-wrap: wrap;
+}
+section#routs .posts article .post-categories li{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+section#routs .posts article span{
+    font-weight: normal;
+    font-style:italic;
+    font-size:25px;
+}
+
+[value="Abhazia"]:checked ~ .posts .post:not([data-category~="Abhazia"]),
+[value="Vostochnay_Prusia"]:checked ~ .posts .post:not([data-category~="Vostochnay_Prusia"]),
+[value="Musmanskay_oblasty"]:checked ~ .posts .post:not([data-category~="Musmanskay_oblasty"]),
+[value="Krym"]:checked ~ .posts .post:not([data-category~="Krym"]),
+[value="Altay"]:checked ~ .posts .post:not([data-category~="Altay"]),
+[value="Slochnosty_1"]:checked ~ .posts .post:not([data-category~="Slochnosty_1"]),
+[value="Slochnosty_2"]:checked ~ .posts .post:not([data-category~="Slochnosty_2"]),
+[value="Slochnosty_3"]:checked ~ .posts .post:not([data-category~="Slochnosty_3"]),
+[value="Slochnosty_4"]:checked ~ .posts .post:not([data-category~="Slochnosty_4"]),
+[value="Slochnosty_5"]:checked ~ .posts .post:not([data-category~="Slochnosty_5"]),
+[value="Kolichestvo_fo_5"]:checked ~ .posts .post:not([data-category~="Kolichestvo_fo_5"]),
+[value="Kolichestvo_fo_10"]:checked ~ .posts .post:not([data-category~="Kolichestvo_fo_10"]),
+[value="Kolichestvo_fo_15"]:checked ~ .posts .post:not([data-category~="Kolichestvo_fo_15"]),
+[value="Kolichestvo_fo_20"]:checked ~ .posts .post:not([data-category~="Kolichestvo_fo_20"]),
+[value="Kolichestvo_fo_25"]:checked ~ .posts .post:not([data-category~="Kolichestvo_fo_25"]) {
+    display: none;
+}
+section#routs{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+section#routs .ol_style{
+    display: flex;
+    justify-content: center;
+}
+button[class='variety_zons']{
+    opacity: 0;
+}
+button[class='variety_zons']:hover{
+    background-color: #FFE992;
+    color:black;
+}
+/*Страница 3*/
+.h2_page_3{
+    margin-top:60px;
+}
+.vid_blocks .zon_block{
+    width:300px;
+    height: auto;
+    display: block;
+    justify-content: center;
+    box-shadow:5px 5px 10px rgba(0,0,0,0.5);
+    margin:30px;
+    border-radius: 20px;
+}
+.vid_blocks{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.vid_blocks .zon_block:hover{
+    box-shadow: none;
+    border: 1px solid grey;
+    transform: scale(1.2);
+}
+.vid_blocks .zon_block img{
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+}
+.vid_blocks .zon_block button{
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+.vid_blocks .zon_block button:hover{
+    background-color: black;
+    color:white;
+    cursor: pointer;
+}
+.vid_blocks button [class="button_2"]:checked{
+    background-color: violet;
+}
+.vid_blocks .zon_block p{
+    font-size: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.vid_blocks .button_2{
+    background-color: white;
+    border: 1px black solid;
+    height: 30px;
+    padding:0 10px 0 10px;
+    margin-top:15px;
+    margin-bottom: 30px;
+    font-size:25px;
+}
+.vid_blocks .button_2:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+/*Страница 4*/
+section#oform .block_info{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    background-color: #F9F8F9;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+}
+section#oform .block_info:hover{
+    box-shadow:0 0 10px rgba(0,0,0,0.5);
+}
+section#oform .block_info h2{
+    font-size: 28px;
+}
+section#oform .block_info input{
+    font-size: 25px;
+    width: 50%;
+    border:none;
+    background-color: #F9F8F9;
+    margin-right: 20px;
+    margin-left: 20px;
+    min-width: 387px;
+    font-style: italic;
+}
+section#oform .dop_uslugs{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 972px;
+    margin:0 auto;
+   
+}
+section#oform input[type='email']{
+    background-color: white;
+    border: 1px solid black;
+}
+section#oform textarea{
+    width: 40%;
+    font-size: 25px;
+    margin-right: 20px;
+}
+section#oform fieldset{
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+section#oform fieldset legend{
+    font-size: 20px;
+}
+section#oform h2{
+    font-size: 28px;
+}
+section#oform .dop_uslugs .box_usluga{
+    display: block;
+    width: 350px;
+    text-align: center;
+    align-items: center;
+    background-color: #F6FCF7;
+    margin:15px;
+    padding: auto;
+    border-radius: 20px;
+}
+section#oform .dop_uslugs .box_usluga:hover{
+    box-shadow:0 0 10px rgba(0,0,0,0.5);
+}
+section#oform .dop_uslugs .box_usluga img{
+    width: 60%;
+    height: auto;
+    margin-top: 15px;
+}
+section#oform .dop_uslugs .box_usluga h3{
+    font-size: 25px;
+}
+form#oformlenie, form#oform_2{
+    border: none;
+    box-shadow: 0px 0px 0px;
+}
+section#oform {
+    margin-top:100px;
+    margin-bottom: 100px;
+}
+section#oform .dop_uslugs .box_usluga p{
+    font-size: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+form#oform_2{
+    margin-top:30px;
+}

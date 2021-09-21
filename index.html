@@ -1,0 +1,242 @@
+ <!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Главная страница</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+            <div class="footer_information">
+                <div class="logo">
+                    <img src="img/Логотип.png" alt="logo">
+                </div>
+                    <a href="#stocks" class="sslca">Акции</a>
+                    <a href="#search" class="sslca">Поиск</a>
+                    <a href="#podpiska" class="sslca">Управление бронированием</a>
+            </div>
+            </div>
+        </header>
+        <section id="infografika">
+            <div class="container">
+                <div class="infografika_img">
+                    <img src="img/Инфографика.png" alt="infografika_img">
+                </div>
+            </div>
+        </section>
+        <section id="devis">
+            <div class="container">
+                <div class="block_devis">
+                    <div class="info_devic">
+                        <h3>Девиз</h3>
+                        <p>Исполнить мечты просто!</p>
+                    </div>
+                    <div class="info_devic">
+                        <h3>Цель</h3>
+                        <p>Главная цель компании–сделать любой поход удобным,комфортным и безопасным</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about_us">
+            <div class="container">
+                <div class="box_us">
+                    <div class="text_us">
+                        <img src="img/people/pexels-andrea-piacquadio-774909.jpg" alt="people">
+                        <h2>Алустон тур</h2>
+                        <p>Что же можно сказать об этом туре?!
+                            Да хотя бы то, что это лучший тур, который можно представить в Крыму! 
+                            Здесь сочетается супер комфортное проживание и нешуточные физические нагрузки, а ещё мягкий Крымский климат и живописные пейзажи круглый год.</p>
+                    </div>
+                    <div class="text_us">
+                        <img src="img/people/pexels-italo-melo-2379004.jpg" alt="people">
+                        <h2>Лыжный спортивный поход по Хибинам</h2>
+                        <p>
+                            Красивый, сбалансированный маршрут. Грамотный, терпеливый и очень сильный инструктор. Хорошая, ровная команда . Что ещё нужно для того чтобы поход удался? Немного везения с погодой. У нас было всё - и трудности, и радости, и невероятная красота зимних гор!</p>
+                    </div>
+                    <div class="text_us">
+                        <img src="img/people/pexels-la-miko-3671250.jpg" alt="people">
+                        <h2>Загадки Восточной Пруссии</h2>
+                        <p>Такой отдых решили попробовать впервые. Поход удался на все 100%. Все ожидания оправдались. Тур очень насыщенный и исторически познавательный. Если вы надеетесь отдохнуть и расслабиться, то это точно не тут!</p>
+                    </div>
+                    <div class="text_us">
+                        <img src="img/people/pexels-moose-photos-1587009.jpg" alt="people">
+                        <h2>Термальные источники Абхазии</h2>
+                        <p>Путешествием остались очень довольны. До сих пор наслаждаемся послевкусием. Всего было в достатке : ярких эмоций, приятных неожиданностей и удивительных впечатлений! Организаторам спасибо за насыщенную и продуманную программу. Инструкторам 5+ за невероятный труд!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+        <form id="search">
+            <div class="form_search">
+                <h2>Выберите регион:</h2>
+                <div class="type_radio">
+                <input id="radio_1" type="radio" name="region">
+                <label for="radio_1">Абхазия</label>
+                </div>
+                <div class="type_radio">
+                <input id="radio_2" type="radio" name="region">
+                <label for="radio_2">Восточная Пруссия</label>
+                </div>
+                <div class="type_radio">
+                <input id="radio_3" type="radio" name="region">
+                <label for="radio_3">Мурманская область</label>
+                </div>
+                <div class="type_radio">
+                <input id="radio_4" type="radio" name="region">
+                <label for="radio_4">Крым</label>
+                </div>
+                <div class="type_radio">
+                <input id="radio_5" type="radio" name="region">
+                <label for="radio_5">Алтай</label>
+                </div>
+            </div>
+            <div class="form_search">
+                <h2>Выберите предпочитаемую дату начала похода:</h2>
+                <input type="date" id="date_1">
+            </div>
+            <div class="form_search">
+                <h2>Выберите предпочитаемую дату конца похода:</h2>
+                <input type="date" id="date_2">
+            </div>
+            <div class="form_search">
+            <h2>Количество участников</h2>
+            <div class="number">
+                <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+	            <input type="number" min="0" value="1" readonly>
+	            <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+            </div>
+            </div>
+            <div class="form_search">
+                <h2>Уровень подготовки</h2>
+                    <div class="type_level">
+                    <input id="level_1" type="radio" name="levels">
+                    <label for="level_1" class="color_1">1</label>
+                    </div>
+                    <div class="type_level">
+                    <input id="level_2" type="radio" name="levels">
+                    <label for="level_2" class="color_2">2</label>
+                    </div>
+                    <div class="type_level">
+                    <input id="level_3" type="radio" name="levels">
+                    <label for="level_3" class="color_3">3</label>
+                    </div>
+                    <div class="type_level">
+                    <input id="level_4" type="radio" name="levels">
+                    <label for="level_4" class="color_4">4</label>
+                    </div>
+                    <div class="type_level">
+                    <input id="level_5" type="radio" name="levels">
+                    <label for="level_5" class="color_5">5</label>
+                    </div>
+            </div>
+            <div class="form_search">
+                <div class="btn">
+                    <button id="button_search">Поиск</button>
+                </div>
+            </div>
+        </form>
+        </div>
+        <div class="container">
+        <section id="stocks">
+            <div class="all">
+                <input checked type="radio" name="respond" id="desktop">
+                    <article id="slider">
+                            <input checked type="radio" name="slider" id="switch1">
+                            <input type="radio" name="slider" id="switch2">
+                            <input type="radio" name="slider" id="switch3">
+                            <input type="radio" name="slider" id="switch4">
+                        <div id="slides">
+                            <div id="overflow">
+                                <div class="image card_information">
+                                    <article>
+                                        <img src="img/stocks/pexels-andrei-tanase-1271619.jpg" alt="useful_info">
+                                    </article>
+                                    <article>
+                                        <img src="img/stocks/pexels-cliford-mervil-2398220.jpg" alt="useful_info">
+                                    </article>
+                                    <article>
+                                        <img src="img/stocks/pexels-eric-sanman-1365425.jpg" alt="useful_info">
+                                    </article>
+                                    <article>
+                                        <img src="img/stocks/pexels-josh-willink-701016.jpg" alt="useful_info">
+                                    </article>
+                                </div>
+                            <div id="first" class="text card_information">
+                                <h3>Услуги проводника за полцены!</h3>
+                                <p>При условии бронирования похода за 3 месяца до даты начала, вы получаете услуги проводника за полцены.</p>
+                                <button>Подробнее</button>
+                            </div>
+                            <div id="two" class="text card_information">
+                                <h3>Трансфер до места начала похода - в подарок!</h3>
+                                <p>При условии бронирования похода на 3 человек одновременно, вы получаете трансфер в подарок.</p>
+                                <button>Подробнее</button>
+                            </div>
+                            <div id="three" class="text card_information">
+                                <h3>Скидка 20% на следующее бронирование</h3>
+                                <p>Мы рады предложить вам скидку на следующее бронирование, потому что дорожим нашими клиентами.</p>
+                                <button>Подробнее</button>
+                            </div>
+                            <div id="four" class="text card_information">
+                                <h3>Скидка 10% на аренду туристического оборудования.</h3>
+                                <p>Скидка на аренду туристического оборудования предоставляется всем нашим постоянным клиентам, совершившим с нами хотя бы один поход.</p>
+                                <button>Подробнее</button>
+                            </div>
+    
+                            </div>
+                        </div>
+                        <div id="controls">
+                            <label for="switch1"></label>
+                            <label for="switch2"></label>
+                            <label for="switch3"></label>
+                            <label for="switch4"></label>
+                
+                        </div>
+                        <div id="active">
+                            <label for="switch1"></label>
+                            <label for="switch2"></label>
+                            <label for="switch3"></label>
+                            <label for="switch4"></label>
+                        
+                        </div>
+                    </article>
+                </div>
+        </section>
+        </div>
+        <div class="container">
+            <div class="podpis_block">
+                <form id="podpiska">
+                    <h2>Подписка на закрытые акции</h2>
+                    <input type="text" name="podpis" id="podpis_1" placeholder="ФИО">
+                    <input type="email" name="podpis" id="podpis_2" placeholder="e-mail">
+                   <br> 
+                   <div class="btn">
+                   <button>Подписаться</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="footer_block">
+                    <ul>
+                        <li><a href="#stocks" class="sslca">Акции</a></li>
+                        <li><a href="#search" class="sslca">Поиск</a></li>
+                        <li><a href="#podpiska" class="sslca">Управление бронированием</a></li>
+                    </ul>
+                    <ul>
+                        <li class="socisl" ><h3>Мы в соц.сетях</h3></li>
+                        <li class="socisl"><a href="#"><img src="img/social_icons/vk.png" alt="vk"></a><a href="#"><img src="img/social_icons/instagram.png" alt="intsagram"></a></li>
+                    </ul>
+                    <ul>
+                        <li><h3>Наш телефон</h3></li>
+                        <li><a href="tel:88005553310" class="sslca">8 (800)555-33-10</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
